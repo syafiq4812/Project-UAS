@@ -6,14 +6,14 @@ package inpongopi;
 
 /**
  *
- * @author Thomas Fajar Nugraha
+ * @author ThinkPad
  */
-public class home extends javax.swing.JFrame {
+public class FCaffe extends javax.swing.JFrame {
 
     /**
-     * Creates new form home
+     * Creates new form FCaffe
      */
-    public home() {
+    public FCaffe() {
         initComponents();
     }
 
@@ -26,23 +26,28 @@ public class home extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        btn_mulai = new javax.swing.JLabel();
-        jlatar = new javax.swing.JLabel();
+        btn_Industrial = new javax.swing.JLabel();
+        btn_Klasik = new javax.swing.JLabel();
+        btn_Modern = new javax.swing.JLabel();
+        Jlatar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        btn_Industrial.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/C_Industrial.png"))); // NOI18N
+        btn_Industrial.setText("jLabel2");
+        getContentPane().add(btn_Industrial, new org.netbeans.lib.awtextra.AbsoluteConstraints(-70, 140, 380, 410));
 
-        btn_mulai.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/MULAI.png"))); // NOI18N
-        btn_mulai.setText("jLabel3");
-        jPanel1.add(btn_mulai, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 390, 410, 160));
+        btn_Klasik.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/C_klasik.png"))); // NOI18N
+        btn_Klasik.setText("jLabel3");
+        getContentPane().add(btn_Klasik, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 140, 340, 400));
 
-        jlatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/1.jpg"))); // NOI18N
-        jPanel1.add(jlatar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 970, 550));
+        btn_Modern.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/C_modern.png"))); // NOI18N
+        btn_Modern.setText("jLabel4");
+        getContentPane().add(btn_Modern, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 120, 360, 440));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        Jlatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/nuansa cafe.png"))); // NOI18N
+        getContentPane().add(Jlatar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 550));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -64,27 +69,28 @@ public class home extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FCaffe.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FCaffe.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FCaffe.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FCaffe.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new home().setVisible(true);
+                new FCaffe().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel btn_mulai;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JLabel jlatar;
+    private javax.swing.JLabel Jlatar;
+    private javax.swing.JLabel btn_Industrial;
+    private javax.swing.JLabel btn_Klasik;
+    private javax.swing.JLabel btn_Modern;
     // End of variables declaration//GEN-END:variables
 }
