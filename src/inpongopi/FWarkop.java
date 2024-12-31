@@ -28,6 +28,7 @@ public class FWarkop extends javax.swing.JFrame {
 
         btn_Wklasik = new javax.swing.JLabel();
         btn_Wmodern = new javax.swing.JLabel();
+        btn_back = new javax.swing.JLabel();
         Jlatar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -41,11 +42,28 @@ public class FWarkop extends javax.swing.JFrame {
         btn_Wmodern.setText("jLabel3");
         getContentPane().add(btn_Wmodern, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 260, 450, 290));
 
+        btn_back.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/backk.png"))); // NOI18N
+        btn_back.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_backMouseClicked(evt);
+            }
+        });
+        getContentPane().add(btn_back, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, 430, 270, 90));
+
         Jlatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/nuansa_warkop.png"))); // NOI18N
-        getContentPane().add(Jlatar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 960, -1));
+        getContentPane().add(Jlatar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 960, 540));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btn_backMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_backMouseClicked
+        // TODO add your handling code here:
+        tipe t = new tipe();
+        t.setLocationRelativeTo(null);
+        t.setVisible(true);
+        this.setVisible(false);
+        System.out.println("Warkop form berhasil");
+    }//GEN-LAST:event_btn_backMouseClicked
 
     /**
      * @param args the command line arguments
@@ -84,7 +102,8 @@ public class FWarkop extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Jlatar;
-    private javax.swing.JLabel btn_Wklasik;
-    private javax.swing.JLabel btn_Wmodern;
+    public javax.swing.JLabel btn_Wklasik;
+    public javax.swing.JLabel btn_Wmodern;
+    public javax.swing.JLabel btn_back;
     // End of variables declaration//GEN-END:variables
 }

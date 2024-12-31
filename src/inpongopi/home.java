@@ -4,6 +4,8 @@
  */
 package inpongopi;
 
+import java.awt.event.MouseEvent;
+import javax.swing.JOptionPane;
 /**
  *
  * @author Thomas Fajar Nugraha
@@ -36,16 +38,29 @@ public class home extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btn_mulai.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/MULAI.png"))); // NOI18N
-        btn_mulai.setText("jLabel3");
-        jPanel1.add(btn_mulai, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 390, 410, 160));
+        btn_mulai.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_mulaiMouseClicked(evt);
+            }
+        });
+        jPanel1.add(btn_mulai, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 380, 380, 160));
 
-        jlatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/1.jpg"))); // NOI18N
+        jlatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/home.jpg"))); // NOI18N
         jPanel1.add(jlatar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 970, 550));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btn_mulaiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_mulaiMouseClicked
+        // TODO add your handling code here:
+        tipe t = new tipe();
+        t.setLocationRelativeTo(null);
+        t.setVisible(true);
+        this.setVisible(false);
+        System.out.println("mulai berhasil");
+    }//GEN-LAST:event_btn_mulaiMouseClicked
 
     /**
      * @param args the command line arguments
@@ -77,14 +92,17 @@ public class home extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new home().setVisible(true);
+                home h = new home();
+                h.setVisible(true);
+                h.setLocationRelativeTo(null);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel btn_mulai;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JLabel jlatar;
+    public javax.swing.JLabel btn_mulai;
+    public javax.swing.JPanel jPanel1;
+    public javax.swing.JLabel jlatar;
     // End of variables declaration//GEN-END:variables
+
 }

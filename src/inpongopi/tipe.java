@@ -35,17 +35,46 @@ public class tipe extends javax.swing.JFrame {
 
         btn_warkop.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/wrkop.png"))); // NOI18N
         btn_warkop.setText("jLabel2");
+        btn_warkop.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_warkopMouseClicked(evt);
+            }
+        });
         getContentPane().add(btn_warkop, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 480, 210));
 
         btn_cafe.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/cave.png"))); // NOI18N
-        getContentPane().add(btn_cafe, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 250, 430, 220));
+        btn_cafe.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_cafeMouseClicked(evt);
+            }
+        });
+        getContentPane().add(btn_cafe, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 240, 430, 230));
 
         jlatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/tipe.png"))); // NOI18N
-        getContentPane().add(jlatar, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 960, 540));
+        getContentPane().add(jlatar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 960, 540));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btn_warkopMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_warkopMouseClicked
+        // TODO add your handling code here:
+        FWarkop jr = new FWarkop();
+        jr.setLocationRelativeTo(null);
+        jr.setVisible(true);
+        this.setVisible(false);
+        System.out.println("Warkop form berhasil");
+    }//GEN-LAST:event_btn_warkopMouseClicked
+
+    private void btn_cafeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_cafeMouseClicked
+        // TODO add your handling code here:
+        FCaffe jr = new FCaffe();
+        jr.setLocationRelativeTo(null);
+        jr.setVisible(true);
+        this.setVisible(false);
+        System.out.println("caffe form berhasil");
+    }//GEN-LAST:event_btn_cafeMouseClicked
+
+  
     /**
      * @param args the command line arguments
      */
@@ -76,14 +105,16 @@ public class tipe extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new tipe().setVisible(true);
+                tipe t  = new tipe();
+                t.setVisible(true);
+                t.setLocationRelativeTo(null);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel btn_cafe;
-    private javax.swing.JLabel btn_warkop;
-    private javax.swing.JLabel jlatar;
+    public javax.swing.JLabel btn_cafe;
+    public javax.swing.JLabel btn_warkop;
+    public javax.swing.JLabel jlatar;
     // End of variables declaration//GEN-END:variables
 }

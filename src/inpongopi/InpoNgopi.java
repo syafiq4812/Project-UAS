@@ -15,6 +15,10 @@ public class InpoNgopi {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        System.out.println("Hello World!");
+        home h = new home();
+        h.setLocationRelativeTo(null);
+        h.setVisible(true);
     }
     
 }
