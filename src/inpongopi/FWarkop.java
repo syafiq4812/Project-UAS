@@ -36,10 +36,20 @@ public class FWarkop extends javax.swing.JFrame {
 
         btn_Wklasik.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/W_klasik.png"))); // NOI18N
         btn_Wklasik.setText("jLabel2");
+        btn_Wklasik.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_WklasikMouseClicked(evt);
+            }
+        });
         getContentPane().add(btn_Wklasik, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 440, 270));
 
         btn_Wmodern.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/W_modern.png"))); // NOI18N
         btn_Wmodern.setText("jLabel3");
+        btn_Wmodern.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_WmodernMouseClicked(evt);
+            }
+        });
         getContentPane().add(btn_Wmodern, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 260, 450, 290));
 
         btn_back.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/backk.png"))); // NOI18N
@@ -64,6 +74,24 @@ public class FWarkop extends javax.swing.JFrame {
         this.setVisible(false);
         System.out.println("Warkop form berhasil");
     }//GEN-LAST:event_btn_backMouseClicked
+
+    private void btn_WklasikMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_WklasikMouseClicked
+        // TODO add your handling code here:
+        W_klasik wkl = new W_klasik();
+        wkl.setLocationRelativeTo(null);
+        wkl.setVisible(true);
+        this.setVisible(false);
+        System.out.println("Warkop form berhasil");
+    }//GEN-LAST:event_btn_WklasikMouseClicked
+
+    private void btn_WmodernMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_WmodernMouseClicked
+        // TODO add your handling code here:
+        W_modern wm = new W_modern();
+        wm.setLocationRelativeTo(null);
+        wm.setVisible(true);
+        this.setVisible(false);
+        System.out.println("Warkop form berhasil");
+    }//GEN-LAST:event_btn_WmodernMouseClicked
 
     /**
      * @param args the command line arguments

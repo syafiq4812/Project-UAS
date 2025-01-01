@@ -37,14 +37,29 @@ public class FCaffe extends javax.swing.JFrame {
 
         btn_Industrial.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/C_industrial.png"))); // NOI18N
         btn_Industrial.setText("jLabel2");
+        btn_Industrial.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_IndustrialMouseClicked(evt);
+            }
+        });
         getContentPane().add(btn_Industrial, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 140, 310, 400));
 
         btn_Klasik.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/C_klasik.png"))); // NOI18N
         btn_Klasik.setText("jLabel3");
+        btn_Klasik.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_KlasikMouseClicked(evt);
+            }
+        });
         getContentPane().add(btn_Klasik, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 140, 270, 410));
 
         btn_Modern.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/C_modern.png"))); // NOI18N
         btn_Modern.setText("jLabel4");
+        btn_Modern.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_ModernMouseClicked(evt);
+            }
+        });
         getContentPane().add(btn_Modern, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 140, 290, 410));
 
         btn_back.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/backk.png"))); // NOI18N
@@ -70,6 +85,33 @@ public class FCaffe extends javax.swing.JFrame {
         this.setVisible(false);
         System.out.println("Warkop form berhasil");
     }//GEN-LAST:event_btn_backMouseClicked
+
+    private void btn_IndustrialMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_IndustrialMouseClicked
+        // TODO add your handling code here:
+        C_industrial cin = new C_industrial();
+        cin.setLocationRelativeTo(null);
+        cin.setVisible(true);
+        this.setVisible(false);
+        System.out.println("Warkop form berhasil");
+    }//GEN-LAST:event_btn_IndustrialMouseClicked
+
+    private void btn_KlasikMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_KlasikMouseClicked
+        // TODO add your handling code here:
+        C_klasik ckl = new C_klasik();
+        ckl.setLocationRelativeTo(null);
+        ckl.setVisible(true);
+        this.setVisible(false);
+        System.out.println("Warkop form berhasil");
+    }//GEN-LAST:event_btn_KlasikMouseClicked
+
+    private void btn_ModernMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_ModernMouseClicked
+        // TODO add your handling code here:
+        C_modern cm = new C_modern();
+        cm.setLocationRelativeTo(null);
+        cm.setVisible(true);
+        this.setVisible(false);
+        System.out.println("Warkop form berhasil");
+    }//GEN-LAST:event_btn_ModernMouseClicked
 
     /**
      * @param args the command line arguments
