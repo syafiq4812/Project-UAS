@@ -34,33 +34,33 @@ public class FWarkop extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btn_Wklasik.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/W_klasik.png"))); // NOI18N
+        btn_Wklasik.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/Wklasik.png"))); // NOI18N
         btn_Wklasik.setText("jLabel2");
         btn_Wklasik.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btn_WklasikMouseClicked(evt);
             }
         });
-        getContentPane().add(btn_Wklasik, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 440, 270));
+        getContentPane().add(btn_Wklasik, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 440, 270));
 
-        btn_Wmodern.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/W_modern.png"))); // NOI18N
+        btn_Wmodern.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/Wmodern.png"))); // NOI18N
         btn_Wmodern.setText("jLabel3");
         btn_Wmodern.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btn_WmodernMouseClicked(evt);
             }
         });
-        getContentPane().add(btn_Wmodern, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 260, 450, 290));
+        getContentPane().add(btn_Wmodern, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 250, 460, 300));
 
-        btn_back.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/backk.png"))); // NOI18N
+        btn_back.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/back.png"))); // NOI18N
         btn_back.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btn_backMouseClicked(evt);
             }
         });
-        getContentPane().add(btn_back, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, 430, 270, 90));
+        getContentPane().add(btn_back, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 420, 270, 110));
 
-        Jlatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/nuansa_warkop.png"))); // NOI18N
+        Jlatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/nuansa_warkop.png"))); // NOI18N
         getContentPane().add(Jlatar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 960, 540));
 
         pack();
