@@ -4,6 +4,11 @@
  */
 package inpongopi;
 
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+
 /**
  *
  * @author Thomas Fajar Nugraha
@@ -29,6 +34,7 @@ public class FC_MenantiSenja extends javax.swing.JFrame {
         btnfinish = new javax.swing.JLabel();
         btnback = new javax.swing.JLabel();
         btnhome = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         latar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -58,6 +64,14 @@ public class FC_MenantiSenja extends javax.swing.JFrame {
         });
         getContentPane().add(btnhome, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 470, 150, 70));
 
+        jButton1.setText("seacrh");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 260, -1, -1));
+
         latar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/FI_MenantiSenja.png"))); // NOI18N
         getContentPane().add(latar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
@@ -84,6 +98,18 @@ public class FC_MenantiSenja extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.setVisible(false);
     }//GEN-LAST:event_btnfinishMouseClicked
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        Desktop browser = Desktop.getDesktop();
+try {
+        browser.browse(new URI ("https://maps.app.goo.gl/DzDYrVtnxgBc1XED9"));
+}
+catch (IOException err) {
+}
+catch (URISyntaxException err) {
+}
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -124,6 +150,7 @@ public class FC_MenantiSenja extends javax.swing.JFrame {
     private javax.swing.JLabel btnback;
     private javax.swing.JLabel btnfinish;
     private javax.swing.JLabel btnhome;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel latar;
     // End of variables declaration//GEN-END:variables
 }

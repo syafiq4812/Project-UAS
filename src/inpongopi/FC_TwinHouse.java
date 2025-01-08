@@ -3,6 +3,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package inpongopi;
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 /**
  *
@@ -29,6 +33,7 @@ public class FC_TwinHouse extends javax.swing.JFrame {
         btnfinish = new javax.swing.JLabel();
         btnback = new javax.swing.JLabel();
         btnHome = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         layar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -58,6 +63,14 @@ public class FC_TwinHouse extends javax.swing.JFrame {
         });
         getContentPane().add(btnHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 460, 140, 70));
 
+        jButton1.setText("search");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 260, -1, -1));
+
         layar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/FK_twinHouse.png"))); // NOI18N
         getContentPane().add(layar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
@@ -84,6 +97,18 @@ public class FC_TwinHouse extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.setVisible(false);
     }//GEN-LAST:event_btnfinishMouseClicked
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        Desktop browser = Desktop.getDesktop();
+try {
+        browser.browse(new URI ("https://maps.app.goo.gl/Q2bk6AM7TpF7rFKF7"));
+}
+catch (IOException err) {
+}
+catch (URISyntaxException err) {
+}
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -124,6 +149,7 @@ public class FC_TwinHouse extends javax.swing.JFrame {
     private javax.swing.JLabel btnHome;
     private javax.swing.JLabel btnback;
     private javax.swing.JLabel btnfinish;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel layar;
     // End of variables declaration//GEN-END:variables
 }
