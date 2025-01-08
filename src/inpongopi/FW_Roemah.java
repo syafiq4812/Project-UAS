@@ -57,13 +57,13 @@ public class FW_Roemah extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         Desktop browser = Desktop.getDesktop();
-try {
-        browser.browse(new URI ("https://maps.app.goo.gl/dyepYysHc59kqLDe9"));
-}
-catch (IOException err) {
-}
-catch (URISyntaxException err) {
-}
+        try {
+                browser.browse(new URI ("https://maps.app.goo.gl/dyepYysHc59kqLDe9"));
+        }
+        catch (IOException err) {
+        }
+        catch (URISyntaxException err) {
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
