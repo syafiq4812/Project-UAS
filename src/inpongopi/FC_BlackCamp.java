@@ -74,6 +74,7 @@ public class FC_BlackCamp extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(362, 270, 80, -1));
 
+        latar.setBackground(new java.awt.Color(0, 153, 153));
         latar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/FI_BlackCamp.png"))); // NOI18N
         getContentPane().add(latar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
@@ -112,7 +113,7 @@ public class FC_BlackCamp extends javax.swing.JFrame {
         catch (URISyntaxException err) {
         }
     }//GEN-LAST:event_jButton1ActionPerformed
- //https://maps.app.goo.gl/SCYPoxfTNgRbAEBj6
+
     /**
      * @param args the command line arguments
      */

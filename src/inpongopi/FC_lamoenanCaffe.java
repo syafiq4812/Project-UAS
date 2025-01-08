@@ -64,6 +64,8 @@ public class FC_lamoenanCaffe extends javax.swing.JFrame {
         });
         getContentPane().add(btnhome, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 470, 150, 70));
 
+        jButton1.setBackground(new java.awt.Color(0, 153, 153));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("search");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

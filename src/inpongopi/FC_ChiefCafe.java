@@ -64,6 +64,8 @@ public class FC_ChiefCafe extends javax.swing.JFrame {
         });
         getContentPane().add(btnhome, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 470, 150, 60));
 
+        jButton1.setBackground(new java.awt.Color(0, 153, 153));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("search");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -72,6 +74,7 @@ public class FC_ChiefCafe extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 270, -1, -1));
 
+        latar.setBackground(new java.awt.Color(0, 153, 153));
         latar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/FI_ChiefCoffe.png"))); // NOI18N
         getContentPane().add(latar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
