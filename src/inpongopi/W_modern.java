@@ -26,13 +26,33 @@ public class W_modern extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        btnroemahWarkop = new javax.swing.JLabel();
+        btndjajaAbadi = new javax.swing.JLabel();
+        btnbukitDaun = new javax.swing.JLabel();
+        btnabdulMajid = new javax.swing.JLabel();
+        btnKemayu = new javax.swing.JLabel();
+        latar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_warkop/modern.png"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        btnroemahWarkop.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_warkop/M_roemahWarkop.png"))); // NOI18N
+        getContentPane().add(btnroemahWarkop, new org.netbeans.lib.awtextra.AbsoluteConstraints(-30, 170, 230, 310));
+
+        btndjajaAbadi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_warkop/M_djajaAbadi.png"))); // NOI18N
+        getContentPane().add(btndjajaAbadi, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 230, 230, 310));
+
+        btnbukitDaun.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_warkop/M_bukitDaun.png"))); // NOI18N
+        getContentPane().add(btnbukitDaun, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, 230, 310));
+
+        btnabdulMajid.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_warkop/M_abdulMajid.png"))); // NOI18N
+        getContentPane().add(btnabdulMajid, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 230, 230, 310));
+
+        btnKemayu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_warkop/M_kemayu.png"))); // NOI18N
+        getContentPane().add(btnKemayu, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 190, 230, 310));
+
+        latar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_warkop/W_modern.png"))); // NOI18N
+        getContentPane().add(latar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -73,6 +93,11 @@ public class W_modern extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel btnKemayu;
+    private javax.swing.JLabel btnabdulMajid;
+    private javax.swing.JLabel btnbukitDaun;
+    private javax.swing.JLabel btndjajaAbadi;
+    private javax.swing.JLabel btnroemahWarkop;
+    private javax.swing.JLabel latar;
     // End of variables declaration//GEN-END:variables
 }

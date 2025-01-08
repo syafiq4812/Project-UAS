@@ -26,13 +26,33 @@ public class C_industrial extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btnblackChamp = new javax.swing.JLabel();
+        btnmineralcafe = new javax.swing.JLabel();
+        btnmenantisenja = new javax.swing.JLabel();
+        btnchiefCoffe = new javax.swing.JLabel();
+        btnduaCoffe = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/industrial.png"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1002, -1));
+        btnblackChamp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/I_blackcamp.png"))); // NOI18N
+        getContentPane().add(btnblackChamp, new org.netbeans.lib.awtextra.AbsoluteConstraints(-30, 170, 210, 300));
+
+        btnmineralcafe.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/I_mineral.png"))); // NOI18N
+        getContentPane().add(btnmineralcafe, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 240, 210, 310));
+
+        btnmenantisenja.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/I_menantisenja.png"))); // NOI18N
+        getContentPane().add(btnmenantisenja, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, 210, 300));
+
+        btnchiefCoffe.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/I_chief.png"))); // NOI18N
+        getContentPane().add(btnchiefCoffe, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 240, 210, 310));
+
+        btnduaCoffe.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/I_duaCoffe.png"))); // NOI18N
+        getContentPane().add(btnduaCoffe, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 160, 210, 300));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/C_industrial.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 540));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -73,6 +93,11 @@ public class C_industrial extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel btnblackChamp;
+    private javax.swing.JLabel btnchiefCoffe;
+    private javax.swing.JLabel btnduaCoffe;
+    private javax.swing.JLabel btnmenantisenja;
+    private javax.swing.JLabel btnmineralcafe;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

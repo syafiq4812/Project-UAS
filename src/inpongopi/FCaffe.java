@@ -35,17 +35,16 @@ public class FCaffe extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btn_Industrial.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/C_industrial.png"))); // NOI18N
+        btn_Industrial.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/Cindustrial.png"))); // NOI18N
         btn_Industrial.setText("jLabel2");
         btn_Industrial.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btn_IndustrialMouseClicked(evt);
             }
         });
-        getContentPane().add(btn_Industrial, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 140, 310, 400));
+        getContentPane().add(btn_Industrial, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 140, 300, 400));
 
-        btn_Klasik.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/C_klasik.png"))); // NOI18N
-        btn_Klasik.setText("jLabel3");
+        btn_Klasik.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/Cklasik.png"))); // NOI18N
         btn_Klasik.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btn_KlasikMouseClicked(evt);
@@ -53,7 +52,7 @@ public class FCaffe extends javax.swing.JFrame {
         });
         getContentPane().add(btn_Klasik, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 140, 270, 410));
 
-        btn_Modern.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/C_modern.png"))); // NOI18N
+        btn_Modern.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/Cmodern.png"))); // NOI18N
         btn_Modern.setText("jLabel4");
         btn_Modern.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -62,16 +61,15 @@ public class FCaffe extends javax.swing.JFrame {
         });
         getContentPane().add(btn_Modern, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 140, 290, 410));
 
-        btn_back.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/backk.png"))); // NOI18N
-        btn_back.setText("jLabel1");
+        btn_back.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/back.png"))); // NOI18N
         btn_back.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btn_backMouseClicked(evt);
             }
         });
-        getContentPane().add(btn_back, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, 460, 270, 70));
+        getContentPane().add(btn_back, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 400, 270, 150));
 
-        Jlatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/nuansa cafe.png"))); // NOI18N
+        Jlatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/nuansa_cafe.png"))); // NOI18N
         getContentPane().add(Jlatar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 960, 600));
 
         pack();

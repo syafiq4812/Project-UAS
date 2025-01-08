@@ -37,15 +37,15 @@ public class home extends javax.swing.JFrame {
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btn_mulai.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/MULAI.png"))); // NOI18N
+        btn_mulai.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/start.png"))); // NOI18N
         btn_mulai.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btn_mulaiMouseClicked(evt);
             }
         });
-        jPanel1.add(btn_mulai, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 380, 380, 160));
+        jPanel1.add(btn_mulai, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 470, 250, 70));
 
-        jlatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/home.jpg"))); // NOI18N
+        jlatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/home.png"))); // NOI18N
         jPanel1.add(jlatar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 970, 550));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));

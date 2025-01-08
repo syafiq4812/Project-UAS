@@ -26,12 +26,32 @@ public class C_modern extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        sukukatakopi = new javax.swing.JLabel();
+        lamoenanCafe = new javax.swing.JLabel();
+        kopiKenangan = new javax.swing.JLabel();
+        kopitagram = new javax.swing.JLabel();
+        kina = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/modern.png"))); // NOI18N
+        sukukatakopi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/M_suku kata kopi.png"))); // NOI18N
+        getContentPane().add(sukukatakopi, new org.netbeans.lib.awtextra.AbsoluteConstraints(-30, 160, 220, 320));
+
+        lamoenanCafe.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/M_lamoenan cafe.png"))); // NOI18N
+        getContentPane().add(lamoenanCafe, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 230, 220, 320));
+
+        kopiKenangan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/M_kopken.png"))); // NOI18N
+        getContentPane().add(kopiKenangan, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 160, 220, 310));
+
+        kopitagram.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/M_kopitagram.png"))); // NOI18N
+        getContentPane().add(kopitagram, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 230, 220, 320));
+
+        kina.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/M_kina.png"))); // NOI18N
+        getContentPane().add(kina, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 160, 220, 320));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/C_modern.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
@@ -74,5 +94,10 @@ public class C_modern extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel kina;
+    private javax.swing.JLabel kopiKenangan;
+    private javax.swing.JLabel kopitagram;
+    private javax.swing.JLabel lamoenanCafe;
+    private javax.swing.JLabel sukukatakopi;
     // End of variables declaration//GEN-END:variables
 }

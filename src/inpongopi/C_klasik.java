@@ -26,12 +26,32 @@ public class C_klasik extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        luckyCat = new javax.swing.JLabel();
+        yamalu = new javax.swing.JLabel();
+        qordiHQ = new javax.swing.JLabel();
+        kozi = new javax.swing.JLabel();
+        twinHouse = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/klasik.png"))); // NOI18N
+        luckyCat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/K_luckycatt.png"))); // NOI18N
+        getContentPane().add(luckyCat, new org.netbeans.lib.awtextra.AbsoluteConstraints(-30, 170, 220, 310));
+
+        yamalu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/K_yamalu.png"))); // NOI18N
+        getContentPane().add(yamalu, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 240, 220, 310));
+
+        qordiHQ.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/K_gordiHQ.png"))); // NOI18N
+        getContentPane().add(qordiHQ, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, 220, 310));
+
+        kozi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/K_kozi.png"))); // NOI18N
+        getContentPane().add(kozi, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 240, 220, 310));
+
+        twinHouse.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/K_twinHouse.png"))); // NOI18N
+        getContentPane().add(twinHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 170, 220, 310));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/C_klasik.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
@@ -74,5 +94,10 @@ public class C_klasik extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel kozi;
+    private javax.swing.JLabel luckyCat;
+    private javax.swing.JLabel qordiHQ;
+    private javax.swing.JLabel twinHouse;
+    private javax.swing.JLabel yamalu;
     // End of variables declaration//GEN-END:variables
 }

@@ -26,13 +26,33 @@ public class W_klasik extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        btnPuaKale = new javax.swing.JLabel();
+        btnKita = new javax.swing.JLabel();
+        btnGhendhis = new javax.swing.JLabel();
+        btnNasiKuning = new javax.swing.JLabel();
+        btnBlokM = new javax.swing.JLabel();
+        latar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_warkop/klasik.png"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        btnPuaKale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_warkop/K_puaKale.png"))); // NOI18N
+        getContentPane().add(btnPuaKale, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 170, 230, 310));
+
+        btnKita.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_warkop/K_Kita.png"))); // NOI18N
+        getContentPane().add(btnKita, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 240, 240, 310));
+
+        btnGhendhis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_warkop/K_ghendisJawi.png"))); // NOI18N
+        getContentPane().add(btnGhendhis, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, 220, 300));
+
+        btnNasiKuning.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_warkop/K_nasiKuning.png"))); // NOI18N
+        getContentPane().add(btnNasiKuning, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 240, 240, 310));
+
+        btnBlokM.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_warkop/K_square.png"))); // NOI18N
+        getContentPane().add(btnBlokM, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 170, 210, 310));
+
+        latar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_warkop/W_klasik.png"))); // NOI18N
+        getContentPane().add(latar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -73,6 +93,11 @@ public class W_klasik extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel btnBlokM;
+    private javax.swing.JLabel btnGhendhis;
+    private javax.swing.JLabel btnKita;
+    private javax.swing.JLabel btnNasiKuning;
+    private javax.swing.JLabel btnPuaKale;
+    private javax.swing.JLabel latar;
     // End of variables declaration//GEN-END:variables
 }

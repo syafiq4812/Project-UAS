@@ -33,7 +33,7 @@ public class tipe extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btn_warkop.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/wrkop.png"))); // NOI18N
+        btn_warkop.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/warkop.png"))); // NOI18N
         btn_warkop.setText("jLabel2");
         btn_warkop.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -42,7 +42,7 @@ public class tipe extends javax.swing.JFrame {
         });
         getContentPane().add(btn_warkop, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 480, 210));
 
-        btn_cafe.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/cave.png"))); // NOI18N
+        btn_cafe.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/caffe.png"))); // NOI18N
         btn_cafe.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btn_cafeMouseClicked(evt);
@@ -50,7 +50,7 @@ public class tipe extends javax.swing.JFrame {
         });
         getContentPane().add(btn_cafe, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 240, 430, 230));
 
-        jlatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/tipe.png"))); // NOI18N
+        jlatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/tipe.png"))); // NOI18N
         getContentPane().add(jlatar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 960, 540));
 
         pack();
