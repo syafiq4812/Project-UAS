@@ -29,7 +29,7 @@ public class W_klasik extends javax.swing.JFrame {
         btnPuaKale = new javax.swing.JLabel();
         btnKita = new javax.swing.JLabel();
         btnGhendhis = new javax.swing.JLabel();
-        btnNasiKuning = new javax.swing.JLabel();
+        btnNasiKucing = new javax.swing.JLabel();
         btnBlokM = new javax.swing.JLabel();
         latar = new javax.swing.JLabel();
 
@@ -37,18 +37,43 @@ public class W_klasik extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnPuaKale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_warkop/K_puaKale.png"))); // NOI18N
+        btnPuaKale.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnPuaKaleMouseClicked(evt);
+            }
+        });
         getContentPane().add(btnPuaKale, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 170, 230, 310));
 
         btnKita.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_warkop/K_Kita.png"))); // NOI18N
+        btnKita.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnKitaMouseClicked(evt);
+            }
+        });
         getContentPane().add(btnKita, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 240, 240, 310));
 
         btnGhendhis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_warkop/K_ghendisJawi.png"))); // NOI18N
+        btnGhendhis.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnGhendhisMouseClicked(evt);
+            }
+        });
         getContentPane().add(btnGhendhis, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, 220, 300));
 
-        btnNasiKuning.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_warkop/K_nasiKuning.png"))); // NOI18N
-        getContentPane().add(btnNasiKuning, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 240, 240, 310));
+        btnNasiKucing.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_warkop/K_nasiKuning.png"))); // NOI18N
+        btnNasiKucing.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnNasiKucingMouseClicked(evt);
+            }
+        });
+        getContentPane().add(btnNasiKucing, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 240, 240, 310));
 
         btnBlokM.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_warkop/K_square.png"))); // NOI18N
+        btnBlokM.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnBlokMMouseClicked(evt);
+            }
+        });
         getContentPane().add(btnBlokM, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 170, 210, 310));
 
         latar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_warkop/W_klasik.png"))); // NOI18N
@@ -56,6 +81,46 @@ public class W_klasik extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnPuaKaleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPuaKaleMouseClicked
+        // TODO add your handling code here:
+        FW_puaKale pk = new FW_puaKale();
+        pk.setLocationRelativeTo(null);
+        pk.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnPuaKaleMouseClicked
+
+    private void btnKitaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnKitaMouseClicked
+        // TODO add your handling code here:
+        FW_kita k = new FW_kita();
+        k.setLocationRelativeTo(null);
+        k.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnKitaMouseClicked
+
+    private void btnGhendhisMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGhendhisMouseClicked
+        // TODO add your handling code here:
+        FW_ghendisJawi g = new FW_ghendisJawi();
+        g.setLocationRelativeTo(null);
+        g.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnGhendhisMouseClicked
+
+    private void btnNasiKucingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnNasiKucingMouseClicked
+        // TODO add your handling code here:
+        FW_NasiKucing nk = new FW_NasiKucing();
+        nk.setLocationRelativeTo(null);
+        nk.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnNasiKucingMouseClicked
+
+    private void btnBlokMMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBlokMMouseClicked
+        // TODO add your handling code here:
+        FW_blokM bm = new FW_blokM();
+        bm.setLocationRelativeTo(null);
+        bm.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnBlokMMouseClicked
 
     /**
      * @param args the command line arguments
@@ -96,7 +161,7 @@ public class W_klasik extends javax.swing.JFrame {
     private javax.swing.JLabel btnBlokM;
     private javax.swing.JLabel btnGhendhis;
     private javax.swing.JLabel btnKita;
-    private javax.swing.JLabel btnNasiKuning;
+    private javax.swing.JLabel btnNasiKucing;
     private javax.swing.JLabel btnPuaKale;
     private javax.swing.JLabel latar;
     // End of variables declaration//GEN-END:variables

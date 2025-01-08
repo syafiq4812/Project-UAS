@@ -37,18 +37,43 @@ public class W_modern extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnroemahWarkop.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_warkop/M_roemahWarkop.png"))); // NOI18N
+        btnroemahWarkop.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnroemahWarkopMouseClicked(evt);
+            }
+        });
         getContentPane().add(btnroemahWarkop, new org.netbeans.lib.awtextra.AbsoluteConstraints(-30, 170, 230, 310));
 
         btndjajaAbadi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_warkop/M_djajaAbadi.png"))); // NOI18N
+        btndjajaAbadi.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btndjajaAbadiMouseClicked(evt);
+            }
+        });
         getContentPane().add(btndjajaAbadi, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 230, 230, 310));
 
         btnbukitDaun.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_warkop/M_bukitDaun.png"))); // NOI18N
+        btnbukitDaun.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnbukitDaunMouseClicked(evt);
+            }
+        });
         getContentPane().add(btnbukitDaun, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, 230, 310));
 
         btnabdulMajid.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_warkop/M_abdulMajid.png"))); // NOI18N
+        btnabdulMajid.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnabdulMajidMouseClicked(evt);
+            }
+        });
         getContentPane().add(btnabdulMajid, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 230, 230, 310));
 
         btnKemayu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_warkop/M_kemayu.png"))); // NOI18N
+        btnKemayu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnKemayuMouseClicked(evt);
+            }
+        });
         getContentPane().add(btnKemayu, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 190, 230, 310));
 
         latar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_warkop/W_modern.png"))); // NOI18N
@@ -56,6 +81,46 @@ public class W_modern extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnroemahWarkopMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnroemahWarkopMouseClicked
+        // TODO add your handling code here:
+        FW_Roemah r = new FW_Roemah();
+        r.setLocationRelativeTo(null);
+        r.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnroemahWarkopMouseClicked
+
+    private void btndjajaAbadiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btndjajaAbadiMouseClicked
+        // TODO add your handling code here:
+        FW_djajaAbadi da = new FW_djajaAbadi();
+        da.setLocationRelativeTo(null);
+        da.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btndjajaAbadiMouseClicked
+
+    private void btnbukitDaunMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnbukitDaunMouseClicked
+        // TODO add your handling code here:
+        FW_bukitDaun bk = new FW_bukitDaun();
+        bk.setLocationRelativeTo(null);
+        bk.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnbukitDaunMouseClicked
+
+    private void btnabdulMajidMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnabdulMajidMouseClicked
+        // TODO add your handling code here:
+        FW_abdulMajid am = new FW_abdulMajid();
+        am.setLocationRelativeTo(null);
+        am.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnabdulMajidMouseClicked
+
+    private void btnKemayuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnKemayuMouseClicked
+        // TODO add your handling code here:
+        FW_kemayuAmpera ka = new FW_kemayuAmpera();
+        ka.setLocationRelativeTo(null);
+        ka.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnKemayuMouseClicked
 
     /**
      * @param args the command line arguments
