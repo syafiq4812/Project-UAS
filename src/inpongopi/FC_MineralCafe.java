@@ -35,12 +35,27 @@ public class FC_MineralCafe extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnfinish.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/finish.png"))); // NOI18N
+        btnfinish.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnfinishMouseClicked(evt);
+            }
+        });
         getContentPane().add(btnfinish, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 470, 140, 60));
 
         btnback.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/Back2.png"))); // NOI18N
+        btnback.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnbackMouseClicked(evt);
+            }
+        });
         getContentPane().add(btnback, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 470, 140, 60));
 
         btnhome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/iconHome.png"))); // NOI18N
+        btnhome.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnhomeMouseClicked(evt);
+            }
+        });
         getContentPane().add(btnhome, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 470, 140, 60));
 
         latar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/FI_MineralCafe.png"))); // NOI18N
@@ -48,6 +63,27 @@ public class FC_MineralCafe extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnhomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnhomeMouseClicked
+        // TODO add your handling code here:
+        home h = new home();
+        h.setLocationRelativeTo(null);
+        h.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnhomeMouseClicked
+
+    private void btnbackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnbackMouseClicked
+        // TODO add your handling code here:
+        C_industrial ci = new C_industrial();
+        ci.setLocationRelativeTo(null);
+        ci.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnbackMouseClicked
+
+    private void btnfinishMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnfinishMouseClicked
+        // TODO add your handling code here:
+        this.setVisible(false);
+    }//GEN-LAST:event_btnfinishMouseClicked
 
     /**
      * @param args the command line arguments

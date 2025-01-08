@@ -6,14 +6,14 @@ package inpongopi;
 
 /**
  *
- * @author ThinkPad
+ * @author Thomas Fajar Nugraha
  */
-public class FC_sukuKataKopi extends javax.swing.JFrame {
+public class FC_GordhiHQ extends javax.swing.JFrame {
 
     /**
-     * Creates new form FC_sukuKataKopi
+     * Creates new form FC_GordhiHQ
      */
-    public FC_sukuKataKopi() {
+    public FC_GordhiHQ() {
         initComponents();
     }
 
@@ -26,29 +26,29 @@ public class FC_sukuKataKopi extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnfinish = new javax.swing.JLabel();
-        btnback = new javax.swing.JLabel();
+        finish = new javax.swing.JLabel();
+        back = new javax.swing.JLabel();
         home = new javax.swing.JLabel();
         latar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnfinish.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/finish.png"))); // NOI18N
-        btnfinish.addMouseListener(new java.awt.event.MouseAdapter() {
+        finish.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/finish.png"))); // NOI18N
+        finish.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnfinishMouseClicked(evt);
+                finishMouseClicked(evt);
             }
         });
-        getContentPane().add(btnfinish, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 470, 150, 70));
+        getContentPane().add(finish, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 460, 140, 70));
 
-        btnback.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/Back2.png"))); // NOI18N
-        btnback.addMouseListener(new java.awt.event.MouseAdapter() {
+        back.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/Back2.png"))); // NOI18N
+        back.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnbackMouseClicked(evt);
+                backMouseClicked(evt);
             }
         });
-        getContentPane().add(btnback, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 470, 150, 70));
+        getContentPane().add(back, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 460, 150, 70));
 
         home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/iconHome.png"))); // NOI18N
         home.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -56,21 +56,13 @@ public class FC_sukuKataKopi extends javax.swing.JFrame {
                 homeMouseClicked(evt);
             }
         });
-        getContentPane().add(home, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 470, 150, 70));
+        getContentPane().add(home, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 460, 150, 70));
 
-        latar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/FM_sukukatakopi.png"))); // NOI18N
+        latar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/FK_GordiHQ.png"))); // NOI18N
         getContentPane().add(latar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnbackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnbackMouseClicked
-        // TODO add your handling code here:
-        C_modern cm = new C_modern();
-        cm.setLocationRelativeTo(null);
-        cm.setVisible(true);
-        this.setVisible(false);
-    }//GEN-LAST:event_btnbackMouseClicked
 
     private void homeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_homeMouseClicked
         // TODO add your handling code here:
@@ -80,10 +72,18 @@ public class FC_sukuKataKopi extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_homeMouseClicked
 
-    private void btnfinishMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnfinishMouseClicked
+    private void backMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backMouseClicked
+        // TODO add your handling code here:
+        C_klasik ck = new C_klasik();
+        ck.setLocationRelativeTo(null);
+        ck.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_backMouseClicked
+
+    private void finishMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_finishMouseClicked
         // TODO add your handling code here:
         this.setVisible(false);
-    }//GEN-LAST:event_btnfinishMouseClicked
+    }//GEN-LAST:event_finishMouseClicked
 
     /**
      * @param args the command line arguments
@@ -102,27 +102,27 @@ public class FC_sukuKataKopi extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FC_sukuKataKopi.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FC_GordhiHQ.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FC_sukuKataKopi.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FC_GordhiHQ.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FC_sukuKataKopi.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FC_GordhiHQ.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FC_sukuKataKopi.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FC_GordhiHQ.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FC_sukuKataKopi().setVisible(true);
+                new FC_GordhiHQ().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel btnback;
-    private javax.swing.JLabel btnfinish;
+    private javax.swing.JLabel back;
+    private javax.swing.JLabel finish;
     private javax.swing.JLabel home;
     private javax.swing.JLabel latar;
     // End of variables declaration//GEN-END:variables

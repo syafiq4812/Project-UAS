@@ -37,18 +37,43 @@ public class C_modern extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         sukukatakopi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/M_suku kata kopi.png"))); // NOI18N
+        sukukatakopi.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                sukukatakopiMouseClicked(evt);
+            }
+        });
         getContentPane().add(sukukatakopi, new org.netbeans.lib.awtextra.AbsoluteConstraints(-30, 160, 220, 320));
 
         lamoenanCafe.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/M_lamoenan cafe.png"))); // NOI18N
+        lamoenanCafe.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lamoenanCafeMouseClicked(evt);
+            }
+        });
         getContentPane().add(lamoenanCafe, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 230, 220, 320));
 
         kopiKenangan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/M_kopken.png"))); // NOI18N
+        kopiKenangan.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                kopiKenanganMouseClicked(evt);
+            }
+        });
         getContentPane().add(kopiKenangan, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 160, 220, 310));
 
         kopitagram.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/M_kopitagram.png"))); // NOI18N
+        kopitagram.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                kopitagramMouseClicked(evt);
+            }
+        });
         getContentPane().add(kopitagram, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 230, 220, 320));
 
         kina.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/M_kina.png"))); // NOI18N
+        kina.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                kinaMouseClicked(evt);
+            }
+        });
         getContentPane().add(kina, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 160, 220, 320));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/C_modern.png"))); // NOI18N
@@ -56,6 +81,46 @@ public class C_modern extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void sukukatakopiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sukukatakopiMouseClicked
+        // TODO add your handling code here:
+        FC_sukuKataKopi sk = new FC_sukuKataKopi();
+        sk.setLocationRelativeTo(null);
+        sk.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_sukukatakopiMouseClicked
+
+    private void lamoenanCafeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lamoenanCafeMouseClicked
+        // TODO add your handling code here:
+        FC_lamoenanCaffe lc = new FC_lamoenanCaffe();
+        lc.setLocationRelativeTo(null);
+        lc.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_lamoenanCafeMouseClicked
+
+    private void kopiKenanganMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_kopiKenanganMouseClicked
+        // TODO add your handling code here:
+        FC_kopiKenangan kp = new FC_kopiKenangan();
+        kp.setLocationRelativeTo(null);
+        kp.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_kopiKenanganMouseClicked
+
+    private void kopitagramMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_kopitagramMouseClicked
+        // TODO add your handling code here:
+        FC_Kopitagram kt = new FC_Kopitagram();
+        kt.setLocationRelativeTo(null);
+        kt.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_kopitagramMouseClicked
+
+    private void kinaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_kinaMouseClicked
+        // TODO add your handling code here:
+        FC_KinaCafe kc = new FC_KinaCafe();
+        kc.setLocationRelativeTo(null);
+        kc.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_kinaMouseClicked
 
     /**
      * @param args the command line arguments

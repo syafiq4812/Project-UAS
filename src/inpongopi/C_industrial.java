@@ -37,18 +37,43 @@ public class C_industrial extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnblackChamp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/I_blackcamp.png"))); // NOI18N
+        btnblackChamp.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnblackChampMouseClicked(evt);
+            }
+        });
         getContentPane().add(btnblackChamp, new org.netbeans.lib.awtextra.AbsoluteConstraints(-30, 170, 210, 300));
 
         btnmineralcafe.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/I_mineral.png"))); // NOI18N
+        btnmineralcafe.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnmineralcafeMouseClicked(evt);
+            }
+        });
         getContentPane().add(btnmineralcafe, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 240, 210, 310));
 
         btnmenantisenja.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/I_menantisenja.png"))); // NOI18N
+        btnmenantisenja.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnmenantisenjaMouseClicked(evt);
+            }
+        });
         getContentPane().add(btnmenantisenja, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, 210, 300));
 
         btnchiefCoffe.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/I_chief.png"))); // NOI18N
+        btnchiefCoffe.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnchiefCoffeMouseClicked(evt);
+            }
+        });
         getContentPane().add(btnchiefCoffe, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 240, 210, 310));
 
         btnduaCoffe.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/I_duaCoffe.png"))); // NOI18N
+        btnduaCoffe.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnduaCoffeMouseClicked(evt);
+            }
+        });
         getContentPane().add(btnduaCoffe, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 160, 210, 300));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/C_industrial.png"))); // NOI18N
@@ -56,6 +81,46 @@ public class C_industrial extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnblackChampMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnblackChampMouseClicked
+        // TODO add your handling code here:
+        FC_BlackCamp bc = new FC_BlackCamp();
+        bc.setLocationRelativeTo(null);
+        bc.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnblackChampMouseClicked
+
+    private void btnmineralcafeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnmineralcafeMouseClicked
+        // TODO add your handling code here:
+        FC_MineralCafe mc = new FC_MineralCafe();
+        mc.setLocationRelativeTo(null);
+        mc.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnmineralcafeMouseClicked
+
+    private void btnmenantisenjaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnmenantisenjaMouseClicked
+        // TODO add your handling code here:
+        FC_MenantiSenja ms = new FC_MenantiSenja();
+        ms.setLocationRelativeTo(null);
+        ms.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnmenantisenjaMouseClicked
+
+    private void btnchiefCoffeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnchiefCoffeMouseClicked
+        // TODO add your handling code here:
+        FC_ChiefCafe cc = new FC_ChiefCafe();
+        cc.setLocationRelativeTo(null);
+        cc.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnchiefCoffeMouseClicked
+
+    private void btnduaCoffeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnduaCoffeMouseClicked
+        // TODO add your handling code here:
+        FC_DuaCafe dc = new FC_DuaCafe();
+        dc.setLocationRelativeTo(null);
+        dc.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnduaCoffeMouseClicked
 
     /**
      * @param args the command line arguments

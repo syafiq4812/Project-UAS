@@ -37,18 +37,43 @@ public class C_klasik extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         luckyCat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/K_luckycatt.png"))); // NOI18N
+        luckyCat.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                luckyCatMouseClicked(evt);
+            }
+        });
         getContentPane().add(luckyCat, new org.netbeans.lib.awtextra.AbsoluteConstraints(-30, 170, 220, 310));
 
         yamalu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/K_yamalu.png"))); // NOI18N
+        yamalu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                yamaluMouseClicked(evt);
+            }
+        });
         getContentPane().add(yamalu, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 240, 220, 310));
 
         qordiHQ.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/K_gordiHQ.png"))); // NOI18N
+        qordiHQ.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                qordiHQMouseClicked(evt);
+            }
+        });
         getContentPane().add(qordiHQ, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, 220, 310));
 
         kozi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/K_kozi.png"))); // NOI18N
+        kozi.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                koziMouseClicked(evt);
+            }
+        });
         getContentPane().add(kozi, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 240, 220, 310));
 
         twinHouse.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/K_twinHouse.png"))); // NOI18N
+        twinHouse.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                twinHouseMouseClicked(evt);
+            }
+        });
         getContentPane().add(twinHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 170, 220, 310));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/C_klasik.png"))); // NOI18N
@@ -56,6 +81,46 @@ public class C_klasik extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void luckyCatMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_luckyCatMouseClicked
+        // TODO add your handling code here:
+        FC_LuckyCat lk = new FC_LuckyCat();
+        lk.setLocationRelativeTo(null);
+        lk.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_luckyCatMouseClicked
+
+    private void yamaluMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_yamaluMouseClicked
+        // TODO add your handling code here:
+        FC_Yamalu ym = new FC_Yamalu();
+        ym.setLocationRelativeTo(null);
+        ym.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_yamaluMouseClicked
+
+    private void qordiHQMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_qordiHQMouseClicked
+        // TODO add your handling code here:
+        FC_GordhiHQ gq = new FC_GordhiHQ();
+        gq.setLocationRelativeTo(null);
+        gq.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_qordiHQMouseClicked
+
+    private void koziMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_koziMouseClicked
+        // TODO add your handling code here:
+        FC_KoziCafe kc = new FC_KoziCafe();
+        kc.setLocationRelativeTo(null);
+        kc.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_koziMouseClicked
+
+    private void twinHouseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_twinHouseMouseClicked
+        // TODO add your handling code here:
+        FC_TwinHouse th = new FC_TwinHouse();
+        th.setLocationRelativeTo(null);
+        th.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_twinHouseMouseClicked
 
     /**
      * @param args the command line arguments

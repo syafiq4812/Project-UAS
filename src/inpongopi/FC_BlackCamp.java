@@ -6,14 +6,14 @@ package inpongopi;
 
 /**
  *
- * @author ThinkPad
+ * @author Thomas Fajar Nugraha
  */
-public class FC_sukuKataKopi extends javax.swing.JFrame {
+public class FC_BlackCamp extends javax.swing.JFrame {
 
     /**
-     * Creates new form FC_sukuKataKopi
+     * Creates new form FC_BlackCamp
      */
-    public FC_sukuKataKopi() {
+    public FC_BlackCamp() {
         initComponents();
     }
 
@@ -26,13 +26,21 @@ public class FC_sukuKataKopi extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btnhone = new javax.swing.JLabel();
         btnfinish = new javax.swing.JLabel();
         btnback = new javax.swing.JLabel();
-        home = new javax.swing.JLabel();
         latar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnhone.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/iconHome.png"))); // NOI18N
+        btnhone.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnhoneMouseClicked(evt);
+            }
+        });
+        getContentPane().add(btnhone, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 470, 150, 70));
 
         btnfinish.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/finish.png"))); // NOI18N
         btnfinish.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -40,7 +48,7 @@ public class FC_sukuKataKopi extends javax.swing.JFrame {
                 btnfinishMouseClicked(evt);
             }
         });
-        getContentPane().add(btnfinish, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 470, 150, 70));
+        getContentPane().add(btnfinish, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 470, 150, 70));
 
         btnback.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/Back2.png"))); // NOI18N
         btnback.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -48,37 +56,29 @@ public class FC_sukuKataKopi extends javax.swing.JFrame {
                 btnbackMouseClicked(evt);
             }
         });
-        getContentPane().add(btnback, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 470, 150, 70));
+        getContentPane().add(btnback, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 470, 150, 70));
 
-        home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/iconHome.png"))); // NOI18N
-        home.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                homeMouseClicked(evt);
-            }
-        });
-        getContentPane().add(home, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 470, 150, 70));
-
-        latar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/FM_sukukatakopi.png"))); // NOI18N
+        latar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/FI_BlackCamp.png"))); // NOI18N
         getContentPane().add(latar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnbackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnbackMouseClicked
-        // TODO add your handling code here:
-        C_modern cm = new C_modern();
-        cm.setLocationRelativeTo(null);
-        cm.setVisible(true);
-        this.setVisible(false);
-    }//GEN-LAST:event_btnbackMouseClicked
-
-    private void homeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_homeMouseClicked
+    private void btnhoneMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnhoneMouseClicked
         // TODO add your handling code here:
         home h = new home();
         h.setLocationRelativeTo(null);
         h.setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_homeMouseClicked
+    }//GEN-LAST:event_btnhoneMouseClicked
+
+    private void btnbackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnbackMouseClicked
+        // TODO add your handling code here:
+        C_industrial ci = new C_industrial();
+        ci.setLocationRelativeTo(null);
+        ci.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnbackMouseClicked
 
     private void btnfinishMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnfinishMouseClicked
         // TODO add your handling code here:
@@ -102,20 +102,20 @@ public class FC_sukuKataKopi extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FC_sukuKataKopi.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FC_BlackCamp.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FC_sukuKataKopi.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FC_BlackCamp.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FC_sukuKataKopi.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FC_BlackCamp.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FC_sukuKataKopi.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FC_BlackCamp.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FC_sukuKataKopi().setVisible(true);
+                new FC_BlackCamp().setVisible(true);
             }
         });
     }
@@ -123,7 +123,7 @@ public class FC_sukuKataKopi extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel btnback;
     private javax.swing.JLabel btnfinish;
-    private javax.swing.JLabel home;
+    private javax.swing.JLabel btnhone;
     private javax.swing.JLabel latar;
     // End of variables declaration//GEN-END:variables
 }

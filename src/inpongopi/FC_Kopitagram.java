@@ -26,16 +26,64 @@ public class FC_Kopitagram extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btnfinish = new javax.swing.JLabel();
+        btnback = new javax.swing.JLabel();
+        btnHome = new javax.swing.JLabel();
         latar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnfinish.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/finish.png"))); // NOI18N
+        btnfinish.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnfinishMouseClicked(evt);
+            }
+        });
+        getContentPane().add(btnfinish, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 470, 150, 60));
+
+        btnback.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/Back2.png"))); // NOI18N
+        btnback.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnbackMouseClicked(evt);
+            }
+        });
+        getContentPane().add(btnback, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 470, 150, 60));
+
+        btnHome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/iconHome.png"))); // NOI18N
+        btnHome.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnHomeMouseClicked(evt);
+            }
+        });
+        getContentPane().add(btnHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 470, 150, 60));
 
         latar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/FM_kopitagram.png"))); // NOI18N
         getContentPane().add(latar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnHomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHomeMouseClicked
+        // TODO add your handling code here:
+        home h = new home();
+        h.setLocationRelativeTo(null);
+        h.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnHomeMouseClicked
+
+    private void btnbackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnbackMouseClicked
+        // TODO add your handling code here:
+        C_modern cm = new C_modern();
+        cm.setLocationRelativeTo(null);
+        cm.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnbackMouseClicked
+
+    private void btnfinishMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnfinishMouseClicked
+        // TODO add your handling code here:
+        this.setVisible(false);
+    }//GEN-LAST:event_btnfinishMouseClicked
 
     /**
      * @param args the command line arguments
@@ -73,6 +121,9 @@ public class FC_Kopitagram extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel btnHome;
+    private javax.swing.JLabel btnback;
+    private javax.swing.JLabel btnfinish;
     private javax.swing.JLabel latar;
     // End of variables declaration//GEN-END:variables
 }
