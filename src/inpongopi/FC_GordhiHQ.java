@@ -4,6 +4,11 @@
  */
 package inpongopi;
 
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+
 /**
  *
  * @author Thomas Fajar Nugraha
@@ -29,6 +34,7 @@ public class FC_GordhiHQ extends javax.swing.JFrame {
         finish = new javax.swing.JLabel();
         back = new javax.swing.JLabel();
         home = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         latar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -58,6 +64,14 @@ public class FC_GordhiHQ extends javax.swing.JFrame {
         });
         getContentPane().add(home, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 460, 150, 70));
 
+        jButton1.setText("search");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 260, -1, -1));
+
         latar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/FK_GordiHQ.png"))); // NOI18N
         getContentPane().add(latar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
@@ -84,6 +98,18 @@ public class FC_GordhiHQ extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.setVisible(false);
     }//GEN-LAST:event_finishMouseClicked
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        Desktop browser = Desktop.getDesktop();
+try {
+        browser.browse(new URI ("https://maps.app.goo.gl/UvwCkTmT9HY9ZvDV6"));
+}
+catch (IOException err) {
+}
+catch (URISyntaxException err) {
+}
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -124,6 +150,7 @@ public class FC_GordhiHQ extends javax.swing.JFrame {
     private javax.swing.JLabel back;
     private javax.swing.JLabel finish;
     private javax.swing.JLabel home;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel latar;
     // End of variables declaration//GEN-END:variables
 }
