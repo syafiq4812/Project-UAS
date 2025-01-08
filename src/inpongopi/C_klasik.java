@@ -52,7 +52,7 @@ public class C_klasik extends javax.swing.JFrame {
         });
         getContentPane().add(yamalu, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 240, 220, 310));
 
-        qordiHQ.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/K_gordiHQ.png"))); // NOI18N
+        qordiHQ.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_cafe/K_GordhiHQ.png"))); // NOI18N
         qordiHQ.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 qordiHQMouseClicked(evt);

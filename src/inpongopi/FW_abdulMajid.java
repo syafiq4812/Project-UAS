@@ -32,6 +32,9 @@ public class FW_abdulMajid extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton1 = new javax.swing.JButton();
+        btnback = new javax.swing.JLabel();
+        btnhome = new javax.swing.JLabel();
+        btnfinish = new javax.swing.JLabel();
         latar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -47,6 +50,30 @@ public class FW_abdulMajid extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 260, -1, -1));
+
+        btnback.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/Back2.png"))); // NOI18N
+        btnback.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnbackMouseClicked(evt);
+            }
+        });
+        getContentPane().add(btnback, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 470, 140, 60));
+
+        btnhome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/iconHome.png"))); // NOI18N
+        btnhome.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnhomeMouseClicked(evt);
+            }
+        });
+        getContentPane().add(btnhome, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 460, 140, 70));
+
+        btnfinish.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/finish.png"))); // NOI18N
+        btnfinish.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnfinishMouseClicked(evt);
+            }
+        });
+        getContentPane().add(btnfinish, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 460, 140, 70));
 
         latar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_warkop/FM_abdulMajid.png"))); // NOI18N
         getContentPane().add(latar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -65,6 +92,27 @@ catch (IOException err) {
 catch (URISyntaxException err) {
 }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void btnhomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnhomeMouseClicked
+        // TODO add your handling code here:
+        home h = new home();
+        h.setLocationRelativeTo(null);
+        h.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnhomeMouseClicked
+
+    private void btnbackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnbackMouseClicked
+        // TODO add your handling code here:
+        W_modern wm = new W_modern();
+        wm.setLocationRelativeTo(null);
+        wm.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnbackMouseClicked
+
+    private void btnfinishMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnfinishMouseClicked
+        // TODO add your handling code here:
+        this.setVisible(false);
+    }//GEN-LAST:event_btnfinishMouseClicked
 
     /**
      * @param args the command line arguments
@@ -102,6 +150,9 @@ catch (URISyntaxException err) {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel btnback;
+    private javax.swing.JLabel btnfinish;
+    private javax.swing.JLabel btnhome;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel latar;
     // End of variables declaration//GEN-END:variables

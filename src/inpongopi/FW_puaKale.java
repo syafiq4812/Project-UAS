@@ -32,6 +32,9 @@ public class FW_puaKale extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton1 = new javax.swing.JButton();
+        btnfinish = new javax.swing.JLabel();
+        btnback = new javax.swing.JLabel();
+        btnhome = new javax.swing.JLabel();
         Latar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -48,7 +51,34 @@ public class FW_puaKale extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 250, -1, -1));
 
-        Latar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_warkop/FK_pua'kale'.png"))); // NOI18N
+        btnfinish.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/finish.png"))); // NOI18N
+        btnfinish.setText("jLabel1");
+        btnfinish.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnfinishMouseClicked(evt);
+            }
+        });
+        getContentPane().add(btnfinish, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 460, 140, 70));
+
+        btnback.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/Back2.png"))); // NOI18N
+        btnback.setText("jLabel1");
+        btnback.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnbackMouseClicked(evt);
+            }
+        });
+        getContentPane().add(btnback, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 460, 140, 70));
+
+        btnhome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/iconHome.png"))); // NOI18N
+        btnhome.setText("jLabel1");
+        btnhome.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnhomeMouseClicked(evt);
+            }
+        });
+        getContentPane().add(btnhome, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 460, 140, 70));
+
+        Latar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_warkop/FK_puaKale.png"))); // NOI18N
         getContentPane().add(Latar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
@@ -65,6 +95,27 @@ catch (IOException err) {
 catch (URISyntaxException err) {
 }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void btnhomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnhomeMouseClicked
+        // TODO add your handling code here:
+        home h = new home();
+        h.setLocationRelativeTo(null);
+        h.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnhomeMouseClicked
+
+    private void btnbackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnbackMouseClicked
+        // TODO add your handling code here:
+        W_klasik wk = new W_klasik();
+        wk.setLocationRelativeTo(null);
+        wk.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnbackMouseClicked
+
+    private void btnfinishMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnfinishMouseClicked
+        // TODO add your handling code here:
+        this.setVisible(false);
+    }//GEN-LAST:event_btnfinishMouseClicked
 
     /**
      * @param args the command line arguments
@@ -104,6 +155,9 @@ catch (URISyntaxException err) {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Latar;
+    private javax.swing.JLabel btnback;
+    private javax.swing.JLabel btnfinish;
+    private javax.swing.JLabel btnhome;
     private javax.swing.JButton jButton1;
     // End of variables declaration//GEN-END:variables
 }

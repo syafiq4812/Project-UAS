@@ -31,30 +31,57 @@ public class FW_bukitDaun extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
+        btnsearch = new javax.swing.JButton();
+        btnfinish = new javax.swing.JLabel();
+        btnback = new javax.swing.JLabel();
+        btnhome = new javax.swing.JLabel();
         latar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setBackground(new java.awt.Color(0, 153, 153));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("search");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnsearch.setBackground(new java.awt.Color(0, 153, 153));
+        btnsearch.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        btnsearch.setForeground(new java.awt.Color(255, 255, 255));
+        btnsearch.setText("search");
+        btnsearch.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnsearchActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 260, -1, -1));
+        getContentPane().add(btnsearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 260, -1, -1));
 
-        latar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_warkop/FM_bukitDaun.png"))); // NOI18N
+        btnfinish.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/finish.png"))); // NOI18N
+        btnfinish.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnfinishMouseClicked(evt);
+            }
+        });
+        getContentPane().add(btnfinish, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 470, 150, 60));
+
+        btnback.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/Back2.png"))); // NOI18N
+        btnback.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnbackMouseClicked(evt);
+            }
+        });
+        getContentPane().add(btnback, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 470, 150, 60));
+
+        btnhome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_all/iconHome.png"))); // NOI18N
+        btnhome.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnhomeMouseClicked(evt);
+            }
+        });
+        getContentPane().add(btnhome, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 470, 150, 60));
+
+        latar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image_warkop/FM_BukitDaun.png"))); // NOI18N
         getContentPane().add(latar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnsearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsearchActionPerformed
         // TODO add your handling code here:
         Desktop browser = Desktop.getDesktop();
 try {
@@ -64,7 +91,28 @@ catch (IOException err) {
 }
 catch (URISyntaxException err) {
 }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnsearchActionPerformed
+
+    private void btnhomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnhomeMouseClicked
+        // TODO add your handling code here:
+        home h = new home();
+        h.setLocationRelativeTo(null);
+        h.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnhomeMouseClicked
+
+    private void btnbackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnbackMouseClicked
+        // TODO add your handling code here:
+        W_modern wm = new W_modern();
+        wm.setLocationRelativeTo(null);
+        wm.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnbackMouseClicked
+
+    private void btnfinishMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnfinishMouseClicked
+        // TODO add your handling code here:
+        this.setVisible(false);
+    }//GEN-LAST:event_btnfinishMouseClicked
 
     /**
      * @param args the command line arguments
@@ -102,7 +150,10 @@ catch (URISyntaxException err) {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel btnback;
+    private javax.swing.JLabel btnfinish;
+    private javax.swing.JLabel btnhome;
+    private javax.swing.JButton btnsearch;
     private javax.swing.JLabel latar;
     // End of variables declaration//GEN-END:variables
 }
