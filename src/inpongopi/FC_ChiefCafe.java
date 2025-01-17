@@ -8,6 +8,7 @@ import java.awt.Desktop;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -83,10 +84,16 @@ public class FC_ChiefCafe extends javax.swing.JFrame {
 
     private void btnhomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnhomeMouseClicked
         // TODO add your handling code here:
-        home h = new home();
-        h.setLocationRelativeTo(null);
-        h.setVisible(true);
-        this.setVisible(false);
+        int response = JOptionPane.showConfirmDialog(null, "Apakah kamu yakin ingin kembali ke Home!!","home",JOptionPane.OK_CANCEL_OPTION);
+            if (response== JOptionPane.OK_OPTION) {
+            home h = new home();
+            h.setLocationRelativeTo(null);
+            h.setVisible(true);
+            this.setVisible(false);
+        }
+            else if (response==JOptionPane.CANCEL_OPTION) {
+            FC_ChiefCafe fc= new FC_ChiefCafe ();
+        }
     }//GEN-LAST:event_btnhomeMouseClicked
 
     private void btnbackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnbackMouseClicked
@@ -99,19 +106,29 @@ public class FC_ChiefCafe extends javax.swing.JFrame {
 
     private void btnfinishMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnfinishMouseClicked
         // TODO add your handling code here:
-        this.setVisible(false);
+        int response = JOptionPane.showConfirmDialog(null, "Apakah kamu yakin ingin keluar!!","finihs",JOptionPane.YES_NO_OPTION);
+            if (response== JOptionPane.YES_OPTION) {
+            this.setVisible(false);
+        }
+            else if (response==JOptionPane.NO_OPTION) {
+            FC_ChiefCafe fc= new FC_ChiefCafe ();
+        }
     }//GEN-LAST:event_btnfinishMouseClicked
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        Desktop browser = Desktop.getDesktop();
-try {
-        browser.browse(new URI ("https://maps.app.goo.gl/SCYPoxfTNgRbAEBj6"));
-}
-catch (IOException err) {
-}
-catch (URISyntaxException err) {
-}
+        try {
+            String url = "https://maps.app.goo.gl/vNDZELx9SR4ZLeF86?g_st=ac";
+            URI uri = new URI(url);
+            Desktop desktop = Desktop.getDesktop();
+            desktop.browse(uri);
+            } 
+            catch (URISyntaxException e) {
+            System.err.println("URL tidak valid: " + e.getMessage());
+            } 
+            catch (IOException e) {
+            System.err.println("Gagal membuka URL: " + e.getMessage());
+            }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
